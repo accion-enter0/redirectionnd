@@ -1,0 +1,48 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+// Coutry Links
+var deFault = '';
+var dO = 'https://www.google.com/';
+var uS = 'https://tinder.com/';
+var mX = 'https://m.youtube.com/';
+var fR = '';
+var eS = '';
+var jP = '';
+var gB = '';
+var pR = '';
+var zA = '';
+var Ch = '';
+var sE = '';
+
+
+// Countries Redirect 
+$.get('https://ipapi.co/country/', (data)=>{
+switch (data) { 
+  case 'DO': window.location.href = dO;
+  break 	
+  case 'US': window.location.href = uS;
+  break 	
+  case 'MX': window.location.href = mX;
+  break 
+  case 'FR': window.location.href = fR;
+  break 	
+  case 'ES': window.location.href = eS;
+  break 
+  case 'JP': window.location.href = jP;
+  break 	
+  case 'GB': window.location.href = gB;
+  break 
+  case 'PR': window.location.href = pR;
+  break 	
+  case 'ZA': window.location.href = zA;
+  break 	
+  case 'CH': window.location.href = Ch;
+  break 	
+  case 'SE': window.location.href = sE;
+  break 	
+  default: window.location.href = deFault;
+  
+}
+});
